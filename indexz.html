@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THINGS YOU NEED TO KNOW TODAY</title>
+
+  <!-- Google AdSense Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1958242919609351"
+     crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .search-bar {
+      margin: 20px auto;
+      text-align: center;
+    }
+    .search-bar input {
+      padding: 12px;
+      width: 90%;
+      max-width: 500px;
+      border: 2px solid #4CAF50;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+      gap: 20px;
+    }
+    .main-content {
+      flex: 2;
+      min-width: 60%;
+    }
+    .sidebar {
+      flex: 1;
+      min-width: 30%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .post, .ad {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .post:hover {
+      transform: translateY(-5px);
+    }
+    .post img, .post video {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .post-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .post-actions button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 14px;
+    }
+    .post-actions button:hover {
+      background-color: #45a049;
+    }
+    .categories {
+      text-align: center;
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .categories button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 14px;
+    }
+    .categories button:hover {
+      background-color: #45a049;
+    }
+    .ad {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #ffeb3b;
+      color: #333;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .main-content, .sidebar {
+        min-width: 100%;
+      }
+      .post-actions {
+        flex-direction: column;
+      }
+      .post-actions button {
+        flex: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>THINGS YOU NEED TO KNOW TODAY</header>
+  <div class="search-bar">
+    <input type="text" placeholder="Search for posts...">
+  </div>
+  <div class="categories">
+    <button>For You</button><button>Short Videos</button><button>Football</button>
+    <button>Entertainment</button><button>Politics</button><button>Business</button>
+    <button>Society</button><button>Education</button>
+  </div>
+  <div class="container">
+    <div class="main-content">
+      <div class="post">
+        <h2>Post Title 1</h2>
+        <img src="https://via.placeholder.com/600x400" alt="Post Image">
+        <p>This is the content of the first post. You can add photos and videos here.</p>
+        <div class="post-actions">
+          <button onclick="likePost()">👍 Like</button>
+          <button onclick="commentPost()">💬 Comment</button>
+          <button onclick="sharePost()">🔗 Share</button>
+        </div>
+      </div>
+
+      <!-- AdSense Ad -->
+      <div class="ad">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-1958242919609351"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <div class="post">
+        <h2>Post Title 2</h2>
+        <video controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <p>This is the content of the second post. You can add photos and videos here.</p>
+        <div class="post-actions">
+          <button onclick="likePost()">👍 Like</button>
+          <button onclick="commentPost()">💬 Comment</button>
+          <button onclick="sharePost()">🔗 Share</button>
+        </div>
+      </div>
+
+      <!-- Another AdSense Ad -->
+      <div class="ad">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-1958242919609351"
+             data-ad-slot="0987654321"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h2>More Ads</h2>
+      <div class="ad">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-1958242919609351"
+             data-ad-slot="1122334455"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 THINGS YOU NEED TO KNOW TODAY. All rights reserved.</footer>
+
+  <script>
+    function likePost() { alert("You liked this post!"); }
+    function commentPost() { alert("You commented on this post!"); }
+    function sharePost() { alert("You shared this post!"); }
+  </script>
+</body>
+</html>
